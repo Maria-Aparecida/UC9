@@ -1,0 +1,302 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    header{
+        width: 100%;
+        /* height: 180px; */
+        margin:0 auto;
+        background-color: rgb(0, 0, 0); 
+    }
+    footer{       
+        width: 100%;
+        /* height: 300px; */
+        margin:0 auto;
+        background-color: rgb(0, 0, 0);
+        color:white;
+    }
+    body{
+        background-color: #A3BBB5;
+    } 
+    
+    #carrossel{        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;    
+    }
+    #carrossel img{
+        display: none;    
+    }
+    .posicao_menu {
+        width: 1200px;
+        margin: 0px auto;
+        height: 100%; 
+        background-color: rgb(0, 0, 0);   
+    }
+    .menu{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        font-size: 30px;         
+    } 
+    .logo{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        color: rgb(255, 255, 255);
+        text-decoration: none; 
+        position: center;
+    }
+    .menu a {   
+        color: rgb(255, 253, 253);
+        text-decoration: none;    
+    }
+    .barra{
+        width: 50px;
+        background-color: rgb(255, 255, 255);
+        display: none;
+    }
+    .corpo_top{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display:block;
+        align-items: center;
+        justify-content:space-between;
+        font-size: 20px; 
+        font-family: sans-serif; 
+    }
+    .passamento_entre_menu_corpo{     
+        margin: 10px auto;
+        padding: 30px; 
+     }
+    .Texto_imagem {
+        width: 650px;
+        height: 150px;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        background-position: center;   
+    }
+    .corpo_inicio, .corpo_fim{
+        width: 1200px;
+        height: 340px;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        font-size: 20px; 
+        font-family: sans-serif; 
+        text-decoration: none;        
+    }
+    .card, .item_primeiro, .item_meio, .item_direito{
+        width: 314px;
+        height: 100%;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        text-align: center;
+        justify-content:space-between;
+        font-size: 30px; 
+        background-color: #A3BBB5;     
+    }
+    .computador_esquerdo a, .computador_meio a, .computador_direito a, .item_primeiro a, .item_meio a, .item_direito a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);       
+    }   
+    .corpo_fim{
+        width: 1200px;
+        height: 340px;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content:space-around; 
+        font-size: 20px; 
+        font-family: sans-serif; 
+        text-decoration: none;
+        background-color: #A3BBB5; 
+    }
+    .corpo_conteudo{
+        height:680px;
+        width: 1200px;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        flex-flow: row wrap;
+        justify-content:space-between;
+        font-size: 20px; 
+        font-family: sans-serif; 
+        text-decoration: none;
+        background-color: #A3BBB5;
+    }    
+    .rodape{ 
+        width: 100%; 
+        text-align: center;   
+        margin: 0 auto;
+        align-items: center;
+        justify-content:space-between;
+        border: 5px solid rgba(0, 0, 0, 0.6);    
+    }
+    .rodape_Direito, .rodape_Esquerdo{
+        width: 100%;
+        font-size: 25px;    
+    }
+    .manutencao{
+        height: 450px;
+        background-image: url(../img/manutencao.jpg);   
+        background-repeat: no-repeat;
+        background-position: center; 
+    } 
+    .manutencaoPC{
+        height: 450px;
+        background-image: url(../img/manutencao4.png);   
+        background-repeat: no-repeat;
+        background-position: center; 
+    }   
+    .console{
+        height: 450px;
+        background-image: url(../img/manutencao3.jpg);   
+        background-repeat: no-repeat;
+        background-position: center; 
+    }  
+    .outlet{
+        height: 450px;
+        background-image: url(../img/black.jpg);   
+        background-repeat: no-repeat;
+        background-position: center; 
+
+    }
+
+    .container_grid{
+        width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+    }      
+    @media screen and (max-width: 1000px) {        
+        .menu , .logo {
+            width: 460px;    
+        }
+        .menu a, .logo a, .rodape{
+            font-size: 16px;
+        }
+        .logologo {
+            width: 200px;  
+            margin: 0 auto;  
+        }
+        .rodape{
+            font-size: 16px;
+        }
+        .corpo_top{
+            font-size: 16px;
+        } 
+        .corpo_conteudo{
+            display: none;
+        }       
+    }
+     @media screen and (max-width: 768px) {        
+        .barra {
+            display: inline-block;  
+        } 
+         .barra{
+            background-color: rgb(255, 255, 255);
+            background-repeat: no-repeat;
+            position: relative;
+		    top:50%;
+            right:-350px;
+		    margin-left:50px;
+		    margin-top:-40px;
+            color: black;
+        }        
+        .corpo_inicio,.Texto_imagem, .corpo_conteudo, .corpo_fim{
+             display: none;   
+        } 
+        .menu {
+            display: none;
+            flex-direction: column;
+            /* width: 200px;  */
+            
+
+            /* background-color: rgb(87, 62, 181); */
+             position: absolute; 
+             top:120px;
+            left: 200px;    
+        }
+        menu a{
+            text-align: center;
+            padding: 15px;
+            font-size: 30px;
+            color:#ff0;            
+        }
+         .posicao_menu{
+            position: relative;
+        } 
+        .rodape{    
+            font-size: 16px;
+        }
+        .menuAtivo{
+            display: flex;            
+        }        
+       
+    } 
+.cadastrar{
+    height: 400px;
+    padding-top: 40px;
+    width: 1000px;
+   
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    display:flex;
+    background-position: center;    
+}
+.novo_cadastro{
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    background-position: center;     
+     
+}
+
+
+/*Página Entrar */
+.cadastrarEmail{
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    background-position: center;     
+      
+}
+.email{
+    background: radial-gradient(circle at 100%, #333, #333 50%, #eee);
+}
+.card{
+    width: 350px;
+        height: 340px;
+        margin: 0 auto;
+        /* display:grid; */
+        align-items: center;
+        text-align: center;
+        justify-content:space-between;
+        font-size: 30px;
+        
+} 
+.card h3{
+    text-align: center;
+}
+.card p{
+    text-align: justify;    
+}
+
